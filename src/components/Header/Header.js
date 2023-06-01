@@ -4,10 +4,21 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
   return <header className={styles.header_container}>
-    <h1>
-      <img src="/assets/logo512.png" alt="Logo" />
-    </h1>
+    
     <nav>
+      <div className={styles.logo}>
+        <Link
+              activeClass='active'
+              className='anchor_link'
+              to={'hero'}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-90}
+            >
+              <img src="/assets/img/logo.svg" alt="Logo" />
+        </Link>
+      </div>
       <ul>
         <li><Link
               activeClass='active'
@@ -18,8 +29,8 @@ const Header = () => {
               duration={500}
               offset={-90}
             >
-                Hero
-            </Link></li>
+              Hero
+        </Link></li>
         <li><Link
               activeClass='active'
               className='anchor_link'
@@ -29,8 +40,8 @@ const Header = () => {
               duration={500}
               offset={-90}
             >
-                Discografía
-            </Link></li>
+              Discografía
+        </Link></li>
         <li><Link
               activeClass='active'
               className='anchor_link'
@@ -40,8 +51,8 @@ const Header = () => {
               duration={500}
               offset={-90}
             >
-                Newsletter
-            </Link></li>
+              Newsletter
+        </Link></li>
         <li><Link
               activeClass='active'
               className='anchor_link'
@@ -51,8 +62,8 @@ const Header = () => {
               duration={500}
               offset={-90}
             >
-                Biografía
-            </Link></li>
+              Biografía
+        </Link></li>
       </ul>
     </nav>
   </header>;

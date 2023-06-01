@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 
 const Header = () => {
   return <header className={styles.header_container}>
-    
     <nav>
       <div className={styles.logo}>
         <Link

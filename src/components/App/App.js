@@ -43,7 +43,7 @@ const App = () => {
         </Element>
       </main>
       <Element name="footer" className="element">
-        <Footer />
+        <Footer txt="2023 Cuarteto de Nos. Todos los derechos reservados." />
       </Element>
     </div>
   );

@@ -1,8 +1,14 @@
 import React from 'react'
+import styles from './Cta.module.css'
 
-function Cta() {
+function Cta({title, txtBtn}) {
   return (
-    <div>Cta</div>
+    <section id="biografia" className={styles.cta}>
+      <div className="container">
+          <h2>{title}</h2>
+          <a href="#biografia" className={styles.btn_primary}>{txtBtn}</a>
+      </div>
+    </section>
   )
 }
 

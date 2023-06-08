@@ -8,6 +8,12 @@ import Form from '../Form/Form';
 import { Element } from 'react-scroll';
 
 const App = () => {
+  const formFields=[
+    {
+      type: 'email',
+      lbl: 'Correo electrónico:'
+    }
+  ]
   return (
     <div className='App'>     
       <Element name="header" className="element">
@@ -16,19 +22,24 @@ const App = () => {
       <main>
         <Element name="hero" className="element">
           <Hero 
-          titulo="Cuarteto de Nos" 
-          descripcion="Banda de rock alternativo originaria de Montevideo, Uruguay."
-          txtBtn="Escuchá nuestra música"
+            titulo="Cuarteto de Nos" 
+            descripcion="Banda de rock alternativo originaria de Montevideo, Uruguay."
+            txtBtn="Escuchá nuestra música"
           />
         </Element>
         <Element name="cardsContainer" className="element">
-          <CardsContainer />
+          <CardsContainer  title="Discografía"/>
         </Element>
         <Element name="form" className="element">
-          <Form />
+          <Form  
+            title = "Newsletter" 
+            desc = "¡Suscríbete a nuestro newsletter para recibir noticias y novedades sobre el Cuarteto de Nos!"
+            fields = {formFields}
+            txtBtn = "Suscribirse"
+          />
         </Element>
         <Element name="cta" className="element">
-          <Cta />
+          <Cta title = "¿Quieres saber más sobre nosotros?" txtBtn="Lee nuestra biografía"/>
         </Element>
       </main>
       <Element name="footer" className="element">

@@ -38,6 +38,7 @@
   transition: color 0.2s ease;
 }
 
-.header_container ul li li:hover {
+.header_container ul li:hover {
+  cursor: pointer;
   color: #111;
 }

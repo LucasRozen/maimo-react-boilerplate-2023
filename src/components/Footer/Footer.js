@@ -1,8 +1,13 @@
 import React from 'react'
+import styles from './Footer.module.css'
 
-const Footer = () => {
+const Footer = ({txt}) => {
   return (
-    <footer>Footer</footer>
+    <footer>
+        <div className="container">
+            <p>&copy; {txt}</p>
+        </div>
+    </footer>
   )
 }
 

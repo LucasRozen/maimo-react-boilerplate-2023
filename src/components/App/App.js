@@ -3,8 +3,10 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import CardsContainer from '../CardsContainer/CardsContainer';
+
 import Cta from '../Cta/Cta';
 import Form from '../Form/Form';
+
 import { Element } from 'react-scroll';
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
     }
   ]
   return (
+
     <div className='App'>     
       <Element name="header" className="element">
         <Header />
@@ -44,6 +47,7 @@ const App = () => {
       </main>
       <Element name="footer" className="element">
         <Footer txt="2023 Cuarteto de Nos. Todos los derechos reservados." />
+
       </Element>
     </div>
   );

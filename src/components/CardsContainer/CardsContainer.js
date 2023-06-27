@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Card from '../Card/Card'
 import style from './CardsContainer.module.css'
@@ -32,4 +33,4 @@ const CardsContainer = ({title}) => {
   )
 }
 
-export default CardsContainer
+export default CardsContainer;

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Card.module.css'
 
+
 const Card = ({img,title,year}) => {
   return (
     <article className={styles.card}>
